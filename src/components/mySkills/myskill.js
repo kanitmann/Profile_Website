@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class blogPage extends Component {
+class myskill extends Component {
     render() {
         return (
             <div>
-                BlogPage
+                
             </div>
         );
     }
 }
 
-export default blogPage;
+export default myskill;
