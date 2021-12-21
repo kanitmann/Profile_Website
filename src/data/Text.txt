@@ -13,30 +13,32 @@ Fonts
 
 Skills
 ----------------------------------------------
-I love to create design which speaks, Keep it clean, minimal and simple.
-I LIKE TO DESIGN
+I love to code and create solutions!
+I also love designing! 
 Web Design
 Mobile Apps
+Smart Watch Faces
 TOOLS
-Figma
+Figma, Adobee Illustrator, Adobe XD, Adobe Photoshop
 
 I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
 SKILLS
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
+Html, Css, Js, React, Tensorflow, OpenCV, Numpy, Solidity, Markdown
 
 TOOLS
-VScode, Github, Codepen etc.
+VScode, Github, Heroku, Docker, MySQL
 
 ----------------------------------------------
 
 About Text
 
 ----------------------------------------------
-I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
+I'm a Polyglot Programmer from India :wave:. I love to experiment around and create tools which can be used by everyone on internet.
 
-I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
+I'm interested to check out all the great technologies world has to offer to us in today's time. I am relatively new to blogging. I love to write code, design UIs and read books.
 
-I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+Something personal about me? I absolutely love tea <3. 
+You can connect with me via social links.
 ----------------------------------------------
 
 
