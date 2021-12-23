@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Github, LinkedIn, Twitter, Wakatime} from "../AllSvgs";
 import {NavLink} from "react-router-dom";
 import styled from "styled-components";

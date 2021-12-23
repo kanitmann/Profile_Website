@@ -25,8 +25,8 @@ const Power = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(0, 255, 0, 0.4);
-    box-shadow: 0 0 8px 6px rgba(0, 255, 0, 0.2);
+    background-color: rgba(204, 255, 203, 0.4);
+    box-shadow: 0 0 8px 6px rgba(204, 255, 203, 0.2);
   }
 
   & > *::first-child {
@@ -40,7 +40,7 @@ const powerButton = () => {
     return (
         <Power>
             <NavLink to="/">
-                <Powerbtn width={24} height={24} fiull='currentColor'/>
+                <Powerbtn width={24} height={24} fill='#000'/>
             </NavLink>
         </Power>
     );
