@@ -4,6 +4,7 @@ export const lightTheme = {
     fontFamily: "'Source Sans Pro', sans-serif",
     bodyRgba: "#dc143c",
     textRgba: "#181d27 ",
+    realrgba:"24,29,39",
 }
 
 export const darkTheme = {
@@ -12,4 +13,5 @@ export const darkTheme = {
     fontFamily: "'Source Sans Pro', sans-serif",
     textRgba: "#181d27",
     bodyRgba: "#dc143c",
+    realrgba:"24,29,39",
 }

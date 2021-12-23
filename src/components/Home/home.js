@@ -6,6 +6,7 @@ import SocialIcons from "../subComponents/SocialIcons";
 import { NavLink } from "react-router-dom";
 import { YinYang } from "../AllSvgs";
 import Intro from '../Intro';
+import { motion } from 'framer-motion';
 
 
 const MainContainer = styled.div`
@@ -15,7 +16,7 @@ const MainContainer = styled.div`
   overflow: hidden;
   position: relative;
 
-  h2, h3, h4, h5, h6 {
+  motion.h2, h3, h4, h5, h6 {
     font-family: 'Karla', sans-serif;
     font-weight: 500;
   }
@@ -116,7 +117,7 @@ const Center = styled.button`
 const DarkDiv = styled.div`
   position: absolute;
   top: 0;
-  background: ${props =>props.theme.textRgba};
+  background: ${props => props.theme.textRgba};
   bottom: 0;
   right: 50%;
   width: ${props => props.click ? '50%' : '0%'};
@@ -132,7 +133,7 @@ const Home = () => {
     <MainContainer>
       <DarkDiv click={click} />
       <Container>
-        <PowerButton />
+        {/* <PowerButton /> */}
         <LogoComponent theme={click ? 'light' : 'dark'} />
         <SocialIcons theme={click ? 'light' : 'dark'} />
 
@@ -145,30 +146,47 @@ const Home = () => {
         </Center>
 
         <Contact target="_blank" to={{ pathname: "mailto:mannkanit@gmail.com" }}>
-          <h3>
+          <motion.h3
+
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+
+          >
             Drop a mail..
-          </h3>
+          </motion.h3>
         </Contact>
         <Blog to="/blog">
-          <h2>
+          <motion.h2
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             Blog
-          </h2>
+          </motion.h2>
         </Blog>
         <Work to="/mywork" click={click}>
-          <h2>
+          <motion.h2
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             Work
-          </h2>
+          </motion.h2>
         </Work>
         <BottomBar>
           <ABOUT to="/aboutme" click={click}>
-            <h2>
+            <motion.h2
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               About
-            </h2>
+            </motion.h2>
           </ABOUT>
           <SKILLS to="/skills">
-            <h2>
+            <motion.h2
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               My Skills
-            </h2>
+            </motion.h2>
           </SKILLS>
         </BottomBar>
       </Container>
