@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import PowerButton from '../subComponents/powerButton';
+// import PowerButton from '../subComponents/powerButton';
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import { NavLink } from "react-router-dom";

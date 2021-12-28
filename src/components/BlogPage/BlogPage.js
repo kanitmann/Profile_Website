@@ -4,7 +4,7 @@ import img from "../../assets/Images/bg.jpg"
 import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/powerButton.js';
-
+import ParticleComponent from '../subComponents/ParticleComponent';
 
 import { Blogs } from './BlogData';
 import BlogComponent from './BlogComponent'
@@ -12,7 +12,7 @@ import AnchorComponent from '../subComponents/Anchor'
 import BigTitle from "../subComponents/BigTitle"
 import { motion } from 'framer-motion'
 
-const MainContainer = styled.div`
+const MainContainer = styled(motion.div)`
 background-image: url(${img});
 background-size:cover;
 background-repeat: no-repeat;
@@ -28,7 +28,7 @@ height:100vh;
 
 position: relative;
 padding-bottom: 5rem;
-
+z-index:1;
 `
 
 const Center = styled.div`
@@ -36,12 +36,14 @@ display:flex;
 justify-content:center;
 align-items:center;
 padding-top:10rem;
+z-index:1;
 `
 
 const Grid = styled.div`
 display:grid;
 grid-template-columns:repeat(2, minmax(calc(10rem + 15vw), 1fr));
 grid-gap:3rem;
+z-index:1;
 `
 const container = {
 
@@ -69,7 +71,7 @@ const BlogPage = () => {
 
 
     return (
-        <motion.MainContainer
+        <MainContainer
             variants={container}
             initial='hidden'
             animate='show'
@@ -77,11 +79,13 @@ const BlogPage = () => {
                 opacity: 0, transition: { duration: 0.5 }
             }}
         >
+            <AnchorComponent number={numbers} />
             <Container>
                 <LogoComponent />
                 <PowerButton />
                 <SocialIcons />
-                <AnchorComponent number={numbers} />
+                <ParticleComponent theme='dark' />
+                
                 <Center>
                     <Grid>
 
@@ -94,7 +98,7 @@ const BlogPage = () => {
                 </Center>
                 <BigTitle text="BLOG" top="5rem" left="5rem" />
             </Container>
-        </motion.MainContainer>
+        </MainContainer>
     )
 }
 
